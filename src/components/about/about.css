@@ -139,6 +139,32 @@
     width: 80%;
     background-color: rgb(6, 148, 77);
 }
+
+.aws {
+    width: 80%;
+    background-color: rgb(6, 148, 77);
+}
+
+.python {
+    width: 85%;
+    background-color: #3572A5; /* Python blue */
+}
+
+.aws {
+    width: 60%;
+    background-color: #FF9900; /* AWS orange */
+}
+
+.git {
+    width: 80%;
+    background-color: #F1502F; /* Git orange */
+}
+
+.dataanalysis {
+    width: 60%;
+    background-color: #6C63FF; /* Soft purple for Data Analysis */
+}
+
  
 .about_boxes {
     justify-content: center;

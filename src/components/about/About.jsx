@@ -49,8 +49,8 @@ const About = () => {
            {/* skill 1 */}
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills_name">Front-end Development</h3>
-                <span className="skills_number">80%</span>
+                <h3 className="skills_name">React JS (Front-end Dev)</h3>
+                <span className="skills_number">75%</span>
               </div>
 
               <div className="skills_bar">
@@ -61,8 +61,8 @@ const About = () => {
             {/* skill 2 */}
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills_name">Back-End Development</h3>
-                <span className="skills_number ">50%</span>
+                <h3 className="skills_name">Android Studio (Mobile Dev)</h3>
+                <span className="skills_number ">70%</span>
               </div>
 
               <div className="skills_bar">
@@ -73,8 +73,8 @@ const About = () => {
             {/* skill 3 */}
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills_name">Android Development</h3>
-                <span className="skills_number">70%</span>
+                <h3 className="skills_name">Java</h3>
+                <span className="skills_number">80%</span>
               </div>
 
               <div className="skills_bar">
@@ -85,14 +85,63 @@ const About = () => {
             {/* skill 4 */}
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills_name">Amazon AWS</h3>
-                <span className="skills_number">80%</span>
+                <h3 className="skills_name">C++</h3>
+                <span className="skills_number">75%</span>
               </div>
 
               <div className="skills_bar">
                 <span className="skills_percentage aws"></span>
               </div>
             </div>
+
+            {/* skill 5 */}
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills_name">Python</h3>
+                <span className="skills_number">85%</span>
+              </div>
+
+              <div className="skills_bar">
+                <span className="skills_percentage python"></span>
+              </div>
+            </div>
+
+            {/* skill 6 */}
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills_name">AWS Basics(Cloud)</h3>
+                <span className="skills_number">60%</span>
+              </div>
+
+              <div className="skills_bar">
+                <span className="skills_percentage aws"></span>
+              </div>
+            </div>
+
+            {/* skill 7 */}
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills_name">Git & GitHub</h3>
+                <span className="skills_number">80%</span>
+              </div>
+
+              <div className="skills_bar">
+                <span className="skills_percentage git"></span>
+              </div>
+            </div>
+
+            {/* skill 8 */}
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills_name">Data Analysis</h3>
+                <span className="skills_number">60%</span>
+              </div>
+
+              <div className="skills_bar">
+                <span className="skills_percentage dataanalysis"></span>
+              </div>
+            </div>
+
           </div>
 
           
