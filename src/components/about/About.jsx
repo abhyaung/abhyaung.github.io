@@ -13,13 +13,38 @@ const About = () => {
 
         <div className="about_data grid">
           <div className="about_info">
-            <p className="about_description">Hi there! 👋 I’m a Computer Science graduate 
-              student at Pace University, passionate about building innovative solutions 
-              and creating meaningful impact through technology. 💡✨</p>
-            <a href="" className="btn">Download Resume</a>
+            <p className="about_description">
+              
+            <section className="about section" id="about">
+              {/* <h2 className="section_title">👨‍💻 About Me</h2> */}
+              
+
+              <div className="about_container container grid">
+                <div className="about_data">
+                  <p className="about_description">
+                    Hello! I'm <strong>Abhyaung Havale</strong> 👋, a passionate Technology Support Associate at SECA Intelligence and an aspiring Software Engineer.
+                    <br /><br />
+                    🎓 I'm currently pursuing my <strong>Master of Science in Computer Science</strong> at <strong>Pace University's Seidenberg School of Computer Science and Information Systems</strong>.
+                    <br /><br />
+                    💡 My expertise lies in:
+                    <ul>
+                      <li>📱 App Development</li>
+                      <li>🌐 Full-Stack Engineering</li>
+                      <li>☁️ Cloud Solutions</li>
+                    </ul>
+                    <br />
+                    I'm always eager to innovate and contribute to impactful projects that drive technological advancement 🚀.
+                  </p>
+                </div>
+              </div>
+          </section>
+
+            </p>
+            {/* <a href="" className="btn">Download Resume</a> */}
           </div>
 
           <div className="about_skills grid">
+            
 
            {/* skill 1 */}
             <div className="skills_data">
@@ -69,6 +94,8 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          
         </div>
       </div>
 
