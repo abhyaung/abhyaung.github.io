@@ -9,38 +9,39 @@ const AboutBox = () => {
             <i className="about_icon icon-fire"></i>
 
             <div>
-                <h3 className="about_title">22</h3>
+                <h3 className="about_title">6+</h3>
                 <span className="about_subtitle">Projects Completed</span>
             </div>
         </div>
 
-        {/* Coffee Cups */}
+        {/* Skills learned */}
         <div className="about_box">
-            <i className="about_icon icon-cup"></i>
+            <i className="about_icon icon-graduation"></i>
 
             <div>
-                <h3 className="about_title">2000</h3>
-                <span className="about_subtitle">Cup of coffee</span>
+                <h3 className="about_title">12+</h3>
+                <span className="about_subtitle">Skills Learned</span>
             </div>
         </div>
 
-        {/* Coffee Cups */}
+
+        {/* GitHub Contributions */}
         <div className="about_box">
-            <i className="about_icon icon-cup"></i>
+            <i className="about_icon icon-social-github"></i>
 
             <div>
-                <h3 className="about_title">2000</h3>
-                <span className="about_subtitle">Cup of coffee</span>
+                <h3 className="about_title">200+ Commits</h3>
+                <span className="about_subtitle">GitHub Contributions</span>
             </div>
         </div>
 
-        {/* Coffee Cups */}
+        {/* Work/Internships */}
         <div className="about_box">
-            <i className="about_icon icon-cup"></i>
+            <i className="about_icon icon-briefcase "></i>
 
             <div>
-                <h3 className="about_title">2000</h3>
-                <span className="about_subtitle">Cup of coffee</span>
+                <h3 className="about_title">1</h3>
+                <span className="about_subtitle">Work/Internships</span>
             </div>
         </div>
 
