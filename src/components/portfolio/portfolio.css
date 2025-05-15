@@ -97,3 +97,10 @@
     transform: translateY(0px);
 }
 
+.section_title {
+    padding-bottom: 1.5rem;
+}
+
+.work_img {
+    padding: 1.875rem;
+}
