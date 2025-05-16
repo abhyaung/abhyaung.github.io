@@ -1,5 +1,5 @@
 import Work1 from "../../assets/carpool-logo.svg"
-import Work2 from "../../assets/work-2.svg"
+import Work2 from "../../assets/Logo.jpg"
 import Work3 from "../../assets/Moveasy.png"
 import Work4 from "../../assets/work-4.svg"
 import Work5 from "../../assets/work-5.svg"
@@ -16,8 +16,9 @@ const Menu = [
     {
         id:2,
         image: Work2,
-        title: "Guest App Walkthrough Screens",
-        category:"Art",
+        title: "Swastha Sanchar",
+        category:"Android",
+        link: "https://github.com/abhyaung/Swastha-Sanchar.git"
     },
     {
         id:3,
