@@ -1,6 +1,6 @@
 import Work1 from "../../assets/carpool-logo.svg"
 import Work2 from "../../assets/work-2.svg"
-import Work3 from "../../assets/work-3.svg"
+import Work3 from "../../assets/Moveasy.png"
 import Work4 from "../../assets/work-4.svg"
 import Work5 from "../../assets/work-5.svg"
 import Work6 from "../../assets/threat-detection.svg"
@@ -22,8 +22,9 @@ const Menu = [
     {
         id:3,
         image: Work3,
-        title: "Illustrations for a mobile app",
-        category:"Branding",
+        title: "MoveEasy",
+        category:"Full-Stack",
+        link: "https://github.com/abhyaung/MoveEasy.git"
     },
     {
         id:4,
