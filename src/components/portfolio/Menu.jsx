@@ -27,18 +27,18 @@ const Menu = [
         category:"Full-Stack",
         link: "https://github.com/abhyaung/MoveEasy.git"
     },
-    {
-        id:4,
-        image: Work4,
-        title: "Onboarding Motivation",
-        category:"Design",
-    },
-    {
-        id:5,
-        image: Work5,
-        title: "iMac Mockup Design",
-        category:"Design",
-    },
+    // {
+    //     id:4,
+    //     image: Work4,
+    //     title: "Onboarding Motivation",
+    //     category:"Design",
+    // },
+    // {
+    //     id:5,
+    //     image: Work5,
+    //     title: "iMac Mockup Design",
+    //     category:"Design",
+    // },
     {
         id:6,
         image: Work6,
