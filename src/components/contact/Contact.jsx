@@ -16,7 +16,7 @@ const Contact = () => (
         </p>
       </div>
 
-      {/* point action to your Formspree endpoint */}
+      {/* point action for Formspree endpoint */}
       <form
         action="https://formspree.io/f/mblowqqb"
         method="POST"
