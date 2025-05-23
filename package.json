@@ -2,7 +2,7 @@
   "name": "portfolio-abhyaung",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abhyaung.github.io/myportfolio/",
+  "homepage": "https://abhyaung.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
