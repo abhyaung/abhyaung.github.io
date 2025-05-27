@@ -24,7 +24,7 @@ const About = () => {
                   <p className="about_description">
                     Hello! I'm <strong>Abhyaung Havale</strong> 👋, a passionate Technology Support Associate at SECA Intelligence and an aspiring Software Engineer.
                     <br /><br />
-                    🎓 I'm currently pursuing my <strong>Master of Science in Computer Science</strong> at <strong>Pace University's Seidenberg School of Computer Science and Information Systems</strong>.
+                    🎓I have completed my <strong>Master of Science in Computer Science</strong> at <strong>Pace University's Seidenberg School of Computer Science and Information Systems</strong>.
                     <br /><br />
                     💡 My expertise lies in:
                     <ul>
