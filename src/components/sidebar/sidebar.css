@@ -1,11 +1,23 @@
+/* Hide sidebar on screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0 !important;
+  }
+}
+
+
 .aside {
     position: fixed;
     left: 0;
-    top: 0;
+    bottom: 0;
     background: var(--body-color);
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     padding: 2.5rem;
-    width: 110px;
+    width: 10px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

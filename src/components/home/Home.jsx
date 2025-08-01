@@ -38,7 +38,7 @@ const Home = () => {
 
         {/* <a href="../../assets/Abhyaung - Resume.pdf" className="btn">Resume</a> */}
 
-        <ScrollDown />
+        
       </div>
       <Shapes />
     </section>
