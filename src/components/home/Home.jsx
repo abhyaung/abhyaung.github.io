@@ -12,7 +12,7 @@ const Home = () => {
       <div className='intro'>
         <img src={Me} alt=""  className="home_img" />
         <h1 className="home_name">Hi, I’m <span className="highlight">Abhyaung Havale</span></h1>
-        <span className="home_education">M.S. Computer Science Student @ Pace University  
+        <span className="home_education">M.S. Computer Science Graduate from Pace University  
       • Full-Stack Web & Mobile Developer (React JS, Android)  
       • C++ | Java | Python | Data Analysis Enthusiast </span>
         <HeaderSocials />
