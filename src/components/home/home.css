@@ -35,6 +35,12 @@
     column-gap: 1.75rem;
     margin: 1.5rem 0;
     justify-content: center;
+    align-items: center;
+}
+
+.sppuLogo {
+    border:5;
+    border:black; 
 }
 
 .home_social-link {
