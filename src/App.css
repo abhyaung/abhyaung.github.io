@@ -1,6 +1,12 @@
 .main {
+   display: flex;
+  flex-direction: column;  /* stack each <section> vertically */
+  align-items: center;     /* center child blocks horizontally */
+  text-align: center;      /* center any inline/text inside */
+  
+  /* keep your sizing too */
   width: 100%;
-  max-width: 68rem;  /* ≈1088px */
-  margin: 0 auto;    /* centers it */
-  padding: 1rem;     /* small gutter on all sides */
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
