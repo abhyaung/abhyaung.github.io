@@ -10,8 +10,8 @@ const Contact = () => (
         <h3 className="contact_title">Let's talk about everything!</h3>
         <p className="contact_details">
           Don't like forms? Email me at{' '}
-          <a href="mailto:abhyaungdeepak.havale@pace.edu">
-            abhyaungdeepak.havale@pace.edu
+          <a href="mailto:abhyaung@gmail.com">
+            abhyaung@gmail.com
           </a>
         </p>
       </div>

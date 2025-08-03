@@ -1,9 +1,18 @@
 .services_container {
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 1.875rem;
-    grid-auto-rows: 1fr;
-    gap: 1.876rem;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.876rem;
 }
+
+@media (min-width: 48em) {
+    .services_container {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1.875rem;
+        grid-auto-rows: 1fr;
+        gap: 1.876rem;
+}
+}
+
+
 
 .services_card {
     text-align: center;
@@ -49,8 +58,8 @@
 
 .services_img {
     margin-bottom: 1.25rem;
-    width: 0.5rem;         /* Fixed width */
-    height: 0.5rem;        /* Fixed height */
+    width: 4rem;         /* Fixed width */
+    height: 4rem;        /* Fixed height */
     object-fit: contain; /* Maintain image proportions inside the box */
      margin-bottom: 1.25rem;
     display: block;

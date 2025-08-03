@@ -11,33 +11,25 @@ const About = () => {
       <div className="about_container grid">
         <img src={Image} alt="" className="about_img" />
 
-        <div className="about_data grid">
+        <div className="about_data">
           <div className="about_info">
-            <p className="about_description">
-            <section className="about section" id="about">
-              <div className="about_container container grid">
-                <div className="about_data">
-                  <p className="about_description">
-                    Hello! I'm <strong>Abhyaung Havale</strong> 👋, a passionate Masters Graduate in Computer Science and an aspiring Software Engineer.
-                    <br /><br />
-                    🎓I have completed my <strong>Master of Science in Computer Science</strong> from <strong>Pace University's Seidenberg School of Computer Science and Information Systems</strong>.
-                    <br /><br />
-                    💡 My expertise lies in:
-                    <ul>
-                      <li>📱 App Development</li>
-                      <li>🌐 Software Engineering</li>
-                      <li>☁️ Cloud Solutions</li>
-                      <li>📅 Data Analyt</li>
-                      <li>💻 Front-End Engineering</li>
-                      <li>⌨️ Full-Stack Developer</li>
-                    </ul>
-                    <br />
-                    I'm always eager to innovate and contribute to impactful projects that drive technological advancement 🚀.
-                  </p>
-                </div>
-              </div>
-            </section>
-            </p>
+              <p className="about_description">
+                Hello! I'm <strong>Abhyaung Havale</strong> 👋, a passionate Masters Graduate in Computer Science and an aspiring Software Engineer.
+                <br /><br />
+                🎓I have completed my <strong>Master of Science in Computer Science</strong> from <strong>Pace University's Seidenberg School of Computer Science and Information Systems</strong>.
+                <br /><br />
+                💡 My expertise lies in:
+                <ul>
+                  <li>📱 App Development</li>
+                  <li>🌐 Software Engineering</li>
+                  <li>☁️ Cloud Solutions</li>
+                  <li>📅 Data Analyt</li>
+                  <li>💻 Front-End Engineering</li>
+                  <li>⌨️ Full-Stack Developer</li>
+                </ul>
+                <br />
+                I'm always eager to innovate and contribute to impactful projects that drive technological advancement 🚀.
+              </p>
           </div>
 
           <div className="about_skills grid">

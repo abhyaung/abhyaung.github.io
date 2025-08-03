@@ -13,14 +13,16 @@ const Home = () => {
         <img src={Me} alt=""  className="home_img" />
         <h1 className="home_name">Hi, I’m <span className="highlight">Abhyaung Havale</span></h1>
         <span className="home_education">M.S. Computer Science Graduate from Pace University  
-      • Full-Stack Web & Mobile Developer (React JS, Android)  
-      • C++ | Java | Python | Data Analysis Enthusiast </span>
+        • Full-Stack Web & Mobile Developer (React JS, Android)  
+        • C++ | Java | Python | Data Analysis Enthusiast </span>
         <HeaderSocials />
         <a href={`${process.env.PUBLIC_URL}/Abhyaung_Havale_Resume.pdf`} target="_blank" rel="noopener noreferrer" className="btn">
           📄Resume
         </a>
+        <ScrollDown />
       </div>
       <Shapes />
+      
     </section>
   )
 }
