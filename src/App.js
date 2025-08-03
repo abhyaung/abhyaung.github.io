@@ -11,7 +11,6 @@ import Portfolio from './components/portfolio/Portfolio';
 const App = () => {
   return (
     <div>
-      {/* <Sidebar /> */}
       <main className='main'>
         <Home />
         <About />

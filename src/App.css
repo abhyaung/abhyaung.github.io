@@ -1,5 +1,5 @@
 .main {
-   display: flex;
+  display: flex;
   flex-direction: column;  /* stack each <section> vertically */
   align-items: center;     /* center child blocks horizontally */
   text-align: center;      /* center any inline/text inside */

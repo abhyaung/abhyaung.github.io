@@ -1,6 +1,18 @@
 .resume_container {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 1.875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 48em) { /* 48em ≈ 768px */
+  .resume_container {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
+    row-gap: 10rem;        /* optional, if you want vertical spacing */
+  }
 }
 
 .timeline {

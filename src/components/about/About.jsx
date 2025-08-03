@@ -14,11 +14,7 @@ const About = () => {
         <div className="about_data grid">
           <div className="about_info">
             <p className="about_description">
-              
             <section className="about section" id="about">
-              {/* <h2 className="section_title">👨‍💻 About Me</h2> */}
-              
-
               <div className="about_container container grid">
                 <div className="about_data">
                   <p className="about_description">

@@ -63,11 +63,25 @@
     background-color: var(--container-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    position: relative;
+}
+
+@media (min-width: 48em){
+    .about_data {
+    display:grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
+    row-gap: 1.875rem;
     align-items: flex-start;
     position: relative;
 }
+}
+
+
+
 
 /* .about_data::before {
     content: '';
