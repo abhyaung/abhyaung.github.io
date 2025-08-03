@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css";
 import Image from "../../assets/me-image-2.jpg"
-import AboutBox from './AboutBox';
+
 
 const About = () => {
   return (
@@ -22,25 +22,26 @@ const About = () => {
               <div className="about_container container grid">
                 <div className="about_data">
                   <p className="about_description">
-                    Hello! I'm <strong>Abhyaung Havale</strong> 👋, a passionate Technology Support Associate at SECA Intelligence and an aspiring Software Engineer.
+                    Hello! I'm <strong>Abhyaung Havale</strong> 👋, a passionate Masters Graduate in Computer Science and an aspiring Software Engineer.
                     <br /><br />
-                    🎓I have completed my <strong>Master of Science in Computer Science</strong> at <strong>Pace University's Seidenberg School of Computer Science and Information Systems</strong>.
+                    🎓I have completed my <strong>Master of Science in Computer Science</strong> from <strong>Pace University's Seidenberg School of Computer Science and Information Systems</strong>.
                     <br /><br />
                     💡 My expertise lies in:
                     <ul>
                       <li>📱 App Development</li>
-                      <li>🌐 Full-Stack Engineering</li>
+                      <li>🌐 Software Engineering</li>
                       <li>☁️ Cloud Solutions</li>
+                      <li>📅 Data Analyt</li>
+                      <li>💻 Front-End Engineering</li>
+                      <li>⌨️ Full-Stack Developer</li>
                     </ul>
                     <br />
                     I'm always eager to innovate and contribute to impactful projects that drive technological advancement 🚀.
                   </p>
                 </div>
               </div>
-          </section>
-
+            </section>
             </p>
-            {/* <a href="" className="btn">Download Resume</a> */}
           </div>
 
           <div className="about_skills grid">
@@ -147,8 +148,6 @@ const About = () => {
           
         </div>
       </div>
-
-      <AboutBox />
     </section>
   )
 }

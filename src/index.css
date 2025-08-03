@@ -32,7 +32,7 @@
 }
 
 /* Responsive typography */
-@media screen and (max-width: 1024px) {           /* ← fixed sreen → screen */
+@media screen and (max-width: 64rem) {           /* ← fixed sreen → screen */
   :root {
     --h1-font-size:     1.75rem;
     --h2-font-size:     1.5rem;
@@ -96,9 +96,9 @@ img {
 
 /*========== Reusable CSS ==========*/
 .container {
-  max-width: 1080px; 
+  max-width: 64rem; 
   width: 100%;
-  padding: 0 15px;
+  padding: 0 0.234rem;
   margin: 0 auto;
 }
 
@@ -132,7 +132,7 @@ img {
   line-height: 1;
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-  border: 5px solid transparent;
+  border: 0.078rem solid transparent;
   background-color: var(--first-color);
   color: #fff;
   font-weight: var(--font-bold);

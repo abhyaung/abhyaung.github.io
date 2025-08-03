@@ -8,14 +8,14 @@
 }
 
 .intro {
-    max-width: 540px;
+    max-width: 33.75rem;
     text-align: center;
 
 }
 
 .home_img {
-        width: 200px;            
-        height: 200px;           
+        width: 12.5rem;            
+        height: 12.5rem;           
         border-radius: 50%;      
         border: 3px solid #000;  
         object-fit: cover;       

@@ -1,10 +1,6 @@
 .main {
-  margin-left: 110px
-  
-}
-
-@media screen and (max-width: 768px) {
-  .main {
-    margin-left: 0;
-  }
+  width: 100%;
+  max-width: 68rem;  /* ≈1088px */
+  margin: 0 auto;    /* centers it */
+  padding: 1rem;     /* small gutter on all sides */
 }

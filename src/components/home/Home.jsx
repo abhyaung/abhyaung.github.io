@@ -4,7 +4,7 @@ import Me from "../../assets/me-image.jpg"
 import HeaderSocials from './HeaderSocials';
 import ScrollDown from './ScrollDown';
 import Shapes from './Shapes';
-// import Resume from '../../assets/Abhyaung - Resume.pdf';
+
 
 const Home = () => {
   return (

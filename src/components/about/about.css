@@ -33,7 +33,7 @@
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-color);
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
   }
   
@@ -48,8 +48,8 @@
       
 
 .about_img {
-    width: 250px;            
-    height: 250px;           
+    width: 15.625rem;            
+    height: 15.625;           
     border-radius: 25%;      
     border: 2px solid #000;  
     object-fit: cover;       
@@ -108,7 +108,7 @@
 
 .skills_bar,
 .skills_percentage {
-    height: 7px;
+    height: 0.437rem;
     background-repeat: 0.25rem;
 }
 

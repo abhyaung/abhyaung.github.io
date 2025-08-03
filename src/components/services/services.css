@@ -14,7 +14,7 @@
 }
 
 .services_card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
 }
 
 .services_card:nth-child(1) {
@@ -49,8 +49,8 @@
 
 .services_img {
     margin-bottom: 1.25rem;
-    width: 80px;         /* Fixed width */
-    height: 80px;        /* Fixed height */
+    width: 0.5rem;         /* Fixed width */
+    height: 0.5rem;        /* Fixed height */
     object-fit: contain; /* Maintain image proportions inside the box */
      margin-bottom: 1.25rem;
     display: block;
