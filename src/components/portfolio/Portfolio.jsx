@@ -13,25 +13,27 @@ const Portfolio = () => {
   return (
     <section className="work container section" id="work">
       <h2 className="section_title">My Projects</h2>
-      <div className="work_container grid">
+      <div className="work_container">
         {items.map((elem) => {
-          const{ id, image, title, category,link} = elem;
+          const{ id, image, title, category, link, description} = elem;
           return (
             <div className="work_card" key={id}>
               <div className="work_thumbnail">
-                <img src={image} alt="" className="work_img" />
-                <div className="work_mask"></div>
+                <span className = "work_category">{category}</span>
+                <div className = "information">
+                  <h3 className="work_title">{title}</h3>
+                  <p className="work_description">{description}</p>
+                </div>
+                <a 
+                  href={link} 
+                  targrt="_blank"
+                  rel="noopener nonreferrer"
+                  className="work_button"
+                >
+                  <i className="icon-link work_button-icon"></i>
+                </a>
               </div>
-              <span className="work_category">{category}</span>
-              <h3 className="work_title">{title}</h3>
-              <a 
-                href={link} 
-                targrt="_blank"
-                rel="noopener nonreferrer"
-                className="work_button"
-              >
-                <i className="icon-link work_button-icon"></i>
-              </a>
+              
             </div>
           )
         })}
