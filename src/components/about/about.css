@@ -1,63 +1,52 @@
-.about_container {
-    grid-template-columns: 3fr 9fr;
-    column-gap: 1.875rem;
-}
-
+/* --- Main Section Layout --- */
 .about.section {
     padding: 1rem 0;
-  }
-  
-  .section_title {
+}
+
+.section_title {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
-  }
-  
-  .section_subtitle {
+}
+
+.section_subtitle {
     display: block;
     font-size: 1rem;
     text-align: center;
     margin-bottom: 2rem;
     color: var(--text-color);
-  }
-  
-  .about_container {
+}
+
+/* Mobile First Container */
+.about_container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     justify-content: center;
-  }
-  
-  .about_description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-color);
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .about_description ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .about_description li {
-    margin-bottom: 0.5rem;
-  }
-      
-
-.about_img {
-    width: 15.625rem;            
-    height: 15.625;           
-    border-radius: 25%;      
-    border: 2px solid #000;  
-    object-fit: cover;       
-    object-position: center;
-    display: block;          
-    margin: 0 auto 1.5rem; 
 }
 
+/* Desktop Container Layout */
+@media (min-width: 64em) {
+    .about_container {
+        grid-template-columns: 3fr 9fr;
+        column-gap: 1.875rem;
+    }
+}
+
+/* --- Profile Image Styling --- */
+.about_img {
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 25%;
+    border: 2px solid #000;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+/* --- Data Box Styling (The white card holding the text) --- */
 .about_data {
     padding: 1.875rem;
     background-color: var(--container-color);
@@ -69,104 +58,95 @@
     position: relative;
 }
 
-@media (min-width: 48em){
+/* Splits the text and skills into two columns on desktop */
+@media (min-width: 48em) {
     .about_data {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.875rem;
-    row-gap: 1.875rem;
-    align-items: flex-start;
-    position: relative;
-}
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.875rem;
+        row-gap: 1.875rem;
+        align-items: flex-start;
+    }
 }
 
+/* --- Typography & Text --- */
 .about_description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 100%;
     margin-bottom: 1rem;
-    text-align: justify;
+    text-align: left;
 }
 
-.about_skills {
-    align-self: center;
-    row-gap: 1.25rem;
+.expertise_list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.expertise_list li {
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+/* --- Modern Skill Pills --- */
+.about_skills-modern {
     width: 100%;
+    align-self: flex-start;
 }
 
-.skills_titles {
+.skills_heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--title-color, #333);
+}
+
+.skills_grid {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.skills_name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium); 
+.skill_group_title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--title-color, #555);
+    margin-bottom: 0.75rem;
 }
 
-.skills_number {
-    line-height: 1.2;
+.skill_pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
 }
 
-.skills_bar,
-.skills_percentage {
-    height: 0.437rem;
-    background-repeat: 0.25rem;
+.skill_pill {
+    background-color: var(--container-color, #f3f4f6);
+    color: var(--text-color, #374151);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
 }
 
-.skills_bar {
-    background-color: #f1f1f1;
+.skill_pill:hover {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    border-color: #c7d2fe;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.skills_percentage {
-    display: block;
-}
-
-.frontend {
-    width: 80%;
-    background-color: rgb(255, 209, 92);
-}
-
-.backend {
-    width: 50%;
-    background-color: rgb(255, 76, 96);
-}
-
-.android {
-    width: 70%;
-    background-color: rgb(108, 108, 299);
-}
-
-.aws {
-    width: 80%;
-    background-color: rgb(6, 148, 77);
-}
-
-.aws {
-    width: 80%;
-    background-color: rgb(6, 148, 77);
-}
-
-.python {
-    width: 85%;
-    background-color: #3572A5; /* Python blue */
-}
-
-.aws {
-    width: 60%;
-    background-color: #FF9900; /* AWS orange */
-}
-
-.git {
-    width: 80%;
-    background-color: #F1502F; /* Git orange */
-}
-
-.dataanalysis {
-    width: 60%;
-    background-color: #6C63FF; /* Soft purple for Data Analysis */
-}
-
- 
+/* --- About Boxes (Achievements/Stats kept from original) --- */
 .about_boxes {
+    display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1.875rem;

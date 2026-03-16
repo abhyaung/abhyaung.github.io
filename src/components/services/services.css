@@ -1,70 +1,79 @@
+/* ---------- Layout ---------- */
 .services_container {
-        grid-template-columns: repeat(1,1fr);
-        gap: 1.876rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.875rem;
 }
 
 @media (min-width: 48em) {
     .services_container {
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 1.875rem;
-        grid-auto-rows: 1fr;
-        gap: 1.876rem;
-}
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+@media (min-width: 64em) {
+    .services_container {
+        grid-template-columns: repeat(
+            3,
+            1fr
+        ); /* 3 columns on large screens looks great for 6 items */
+    }
+}
 
-
+/* ---------- Individual Card ---------- */
 .services_card {
     text-align: center;
-    padding: 1.875rem;
+    padding: 2rem 1.875rem;
     border-radius: var(--border-radius);
     background-color: var(--container-color);
     transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .services_card:hover {
     transform: translateY(-0.625rem);
 }
 
+/* ---------- Custom Card Colors & FIXED Shadows ---------- */
 .services_card:nth-child(1) {
     background-color: rgb(108, 108, 229);
-    box-shadow: 0px 5px 20px 0px rgb(108, 108, 229 / 50%);
+    box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
 }
 
 .services_card:nth-child(2) {
     background-color: rgb(249, 215, 50);
-    box-shadow: 0px 5px 20px 0px rgb(249, 215, 50 / 50%);
+    box-shadow: 0px 5px 20px 0px rgba(249, 215, 50, 0.5);
 }
 
 .services_card:nth-child(3) {
     background-color: rgb(249, 123, 139);
-    box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+    box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
 }
 
 .services_card:nth-child(4) {
     background-color: rgb(154, 224, 43);
-    box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+    box-shadow: 0px 5px 20px 0px rgba(154, 224, 43, 0.5); /* Fixed */
 }
 
 .services_card:nth-child(5) {
     background-color: rgb(247, 163, 103);
-    box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+    box-shadow: 0px 5px 20px 0px rgba(247, 163, 103, 0.5); /* Fixed */
 }
 
 .services_card:nth-child(6) {
     background-color: rgb(165, 123, 249);
-    box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+    box-shadow: 0px 5px 20px 0px rgba(165, 123, 249, 0.5); /* Fixed */
 }
 
+/* ---------- Image & Typography ---------- */
 .services_img {
-    margin-bottom: 1.25rem;
-    width: 4rem;         /* Fixed width */
-    height: 4rem;        /* Fixed height */
-    object-fit: contain; /* Maintain image proportions inside the box */
-     margin-bottom: 1.25rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
     display: block;
-     margin-left: auto;
-    margin-right: auto;
 }
 
 .services_title {
@@ -75,5 +84,6 @@
 
 .services_description {
     color: #f8f9fa;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
-
