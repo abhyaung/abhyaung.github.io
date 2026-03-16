@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.545d2ce9.css",
-    "main.js": "/static/js/main.f1b98120.js",
+    "main.css": "/static/css/main.ccd237c8.css",
+    "main.js": "/static/js/main.795b900e.js",
     "static/media/me-image-2.jpg": "/static/media/me-image-2.7bbd9e23c913f3e56242.jpg",
     "static/media/me-image.jpg": "/static/media/me-image.9de5314864e25a21ce5d.jpg",
+    "static/media/todo-list.png": "/static/media/todo-list.1709724550a48aa95e46.png",
+    "static/media/rag-engine.png": "/static/media/rag-engine.ec04c9c144c5d57d5bcb.png",
     "static/media/Logo.jpg": "/static/media/Logo.d4b67cdc6b23a4016fc4.jpg",
     "static/media/Moveasy.png": "/static/media/Moveasy.880e5eb7c4248ec19dfe.png",
-    "static/media/work-4.svg": "/static/media/work-4.58bc4add25b4ccc6b7a8a58c92d45898.svg",
-    "static/media/work-5.svg": "/static/media/work-5.4750a3abd9f5b65e60b80499061a419c.svg",
-    "static/media/data-analysis.svg": "/static/media/data-analysis.210cd5b85a7f0014059a809bbb7a18d4.svg",
-    "static/media/service-2.svg": "/static/media/service-2.0189a317ca98ff4d0fa0ca26ff3c9244.svg",
-    "static/media/carpool-logo.svg": "/static/media/carpool-logo.ece094a34100948fa3883d48c4e5bf56.svg",
+    "static/media/data-analysis.svg": "/static/media/data-analysis.1089b31d953294912b2633cc6c813c28.svg",
+    "static/media/service-2.svg": "/static/media/service-2.5c151f1353d4629154fbf0e537115128.svg",
+    "static/media/sales-analyzer.svg": "/static/media/sales-analyzer.b65fc44c8e28a61193c6ab0cc9598f88.svg",
+    "static/media/calculator.svg": "/static/media/calculator.72acd918a17cacc321c55467bb12d197.svg",
+    "static/media/carpool-logo.svg": "/static/media/carpool-logo.b0306e39c748f60b0d771cd15d049a5e.svg",
     "static/media/threat-detection.svg": "/static/media/threat-detection.e2ce0d1014fc89f593d1aeb19cf8cb63.svg",
-    "static/media/dots-bg.svg": "/static/media/dots-bg.f9af2a6a4e3508808a05.svg",
-    "static/media/cloud-solutions.svg": "/static/media/cloud-solutions.d3342bce566e206fa4fb1023b0e6af60.svg",
-    "static/media/mobile-programming.svg": "/static/media/mobile-programming.4ee995b2bc8ce26f59fd99de929fc313.svg",
+    "static/media/dots-bg.svg": "/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "static/media/cloud-solutions.svg": "/static/media/cloud-solutions.8d626e79d72df7770a7df4d14b4878a0.svg",
+    "static/media/mobile-programming.svg": "/static/media/mobile-programming.3393a961247f6224d774d0da37fb7382.svg",
     "static/media/ai-nlp.svg": "/static/media/ai-nlp.990c326c9d6262eb0211e134dda1cdf7.svg",
+    "static/media/banking-api.svg": "/static/media/banking-api.315e34515c5a864315ddb6231f6bc05f.svg",
     "index.html": "/index.html",
-    "static/media/version-control.svg": "/static/media/version-control.84ccc1259810f5df47a61737a6529976.svg",
-    "main.545d2ce9.css.map": "/static/css/main.545d2ce9.css.map",
-    "main.f1b98120.js.map": "/static/js/main.f1b98120.js.map"
+    "static/media/version-control.svg": "/static/media/version-control.80d8654b86c85a1e603a08437f7f49e4.svg",
+    "main.ccd237c8.css.map": "/static/css/main.ccd237c8.css.map",
+    "main.795b900e.js.map": "/static/js/main.795b900e.js.map"
   },
   "entrypoints": [
-    "static/css/main.545d2ce9.css",
-    "static/js/main.f1b98120.js"
+    "static/css/main.ccd237c8.css",
+    "static/js/main.795b900e.js"
   ]
 }
