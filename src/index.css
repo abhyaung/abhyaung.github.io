@@ -1,4 +1,4 @@
-/**========== Google Fonts ===========*/
+  /**========== Google Fonts ===========*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /*========== Variable CSS ==========*/
@@ -20,7 +20,7 @@
   --smaller-font-size:0.813rem;
 
   /* Font weights */
-  --font-medium:   500;
+  --font-medium:   500; 
   --font-semibold: 600;
   --font-bold:     700;
 

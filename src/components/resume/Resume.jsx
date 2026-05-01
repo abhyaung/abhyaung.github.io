@@ -6,7 +6,7 @@ import Card from "./Card"
 const Resume = () => {
   return (
     <section className="resume container section" id="resume">
-      <h2 className="section_title">My Timeline</h2>
+      <h2 className="section_title">Education</h2>
 
       <div className="resume_container grid">
         <div className="timeline grid">
@@ -24,7 +24,7 @@ const Resume = () => {
           })}
         </div>
 
-        <div className="timeline grid">
+        {/* <div className="timeline grid">
           {Data.map((val, index) => {
             if(val.category === "experience") {
               return(
@@ -37,7 +37,7 @@ const Resume = () => {
               )
             }
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   )

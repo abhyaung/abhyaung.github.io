@@ -30,30 +30,30 @@ const Data = [
     ],
   },
 
-  {
-    id: 4,
-    category: "experience",
-    icon: "icon-briefcase",
-    year: "2022 - 2023",
-    title: "Head of NSS Department",
-    desc: "Led community engagement initiatives and organized events as the NSS Head during my undergraduate studies at Modern College, Pune.",
-  },
-  {
-    id: 5,
-    category: "experience",
-    icon: "icon-briefcase",
-    year: "2022 - 2023",
-    title: "Lab Instructor (Computer Science Dept.)",
-    desc: "Assisted students with practical sessions and debugging, and helped faculty in conducting computer lab activities.",
-  },
-  {
-    id: 6,
-    category: "experience",
-    icon: "icon-briefcase",
-    year: "December 2024 - April 2025",
-    title: "Software Developer Intern — SECA Intelligence",
-    desc: "Working on architecture planning, matchmaking algorithms, and front-end enhancements for a real-world software product.",
-  },
+  // {
+  //   id: 4,
+  //   category: "experience",
+  //   icon: "icon-briefcase",
+  //   year: "2022 - 2023",
+  //   title: "Head of NSS Department",
+  //   desc: "Led community engagement initiatives and organized events as the NSS Head during my undergraduate studies at Modern College, Pune.",
+  // },
+  // {
+  //   id: 5,
+  //   category: "experience",
+  //   icon: "icon-briefcase",
+  //   year: "2022 - 2023",
+  //   title: "Lab Instructor (Computer Science Dept.)",
+  //   desc: "Assisted students with practical sessions and debugging, and helped faculty in conducting computer lab activities.",
+  // },
+  // {
+  //   id: 6,
+  //   category: "experience",
+  //   icon: "icon-briefcase",
+  //   year: "December 2024 - April 2025",
+  //   title: "Software Developer Intern — SECA Intelligence",
+  //   desc: "Working on architecture planning, matchmaking algorithms, and front-end enhancements for a real-world software product.",
+  // },
 ];
 
 export default Data;
