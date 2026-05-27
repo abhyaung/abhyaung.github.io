@@ -22,11 +22,11 @@ const Data = [
     id: 3,
     category: "education",
     icon: "icon-graduation",
-    year: "2023 - Present",
+    year: "2023 - 2025",
     title: "Master of Science in Computer Science",
     desc: [
-      "Currently pursuing coursework in algorithms, cloud computing, artificial intelligence, and data science.",
-      "Engaged in hands-on projects and research initiatives as part of the program's curriculum.",
+      "Completed advanced coursework focused on Artificial Intelligence, Cloud Computing architectures, and Distributed Systems.",
+      "Architected production-ready capstone projects, including local LLM inference engines, asynchronous data pipelines, and highly available microservices."
     ],
   },
 
