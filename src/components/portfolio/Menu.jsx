@@ -8,7 +8,18 @@ import Work7 from "../../assets/todo-list.png"; // Add a screenshot for this!
 import Work8 from "../../assets/Logo.jpg"; // Swastha Sanchar
 import Work9 from "../../assets/calculator.svg"; // Add a screenshot for this!
 
+
+
 const Menu = [
+  {
+    id: 10,
+    image: "https://www.svgrepo.com/show/395618/mic.svg",
+    title: "Field-to-Invoice AI Extractor",
+    category: "AI & ML",
+    link: "hhttps://github.com/abhyaung/field-to-invoice-mvp.git",
+    description:
+      "Architected a decoupled microservice using FastAPI and local open-weight LLMs (Ollama) to parse unstructured field dictation into deterministic, strictly typed JSON arrays for automated invoicing.",
+  },
   {
     id: 1,
     image: Work1,
