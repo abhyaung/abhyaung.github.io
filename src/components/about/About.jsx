@@ -3,49 +3,69 @@ import "./about.css";
 import Image from "../../assets/me-image-2.jpg";
 
 const About = () => {
-  // Categorized skills for a modern, clean UI
+  // Expanded categories encompassing all academic studies, enterprise experience, and architecture goals
   const skillCategories = [
     {
-      title: "Languages & Databases",
+      title: "Languages",
       skills: [
+        "Java (11/17/21)",
         "Python",
-        "Java",
-        "C++",
+        "TypeScript",
         "JavaScript",
+        "C++",
         "SQL",
-        "MongoDB",
-        "HTML5",
-        "CSS3",
       ],
     },
     {
-      title: "Frameworks & Libraries",
+      title: "Frontend & Backend",
       skills: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "PyTorch",
-        "Hugging Face",
+        "Spring Boot",
+        "Node.js & Express",
+        "React.js & Next.js",
+        "GraphQL & gRPC",
+        "Hibernate (JPA)",
+        "Tailwind CSS & MUI",
+      ],
+    },
+    {
+      title: "Databases & Messaging",
+      skills: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis & DynamoDB",
+        "Apache Kafka",
+        "RabbitMQ",
+      ],
+    },
+    {
+      title: "Cloud, DevOps & Tools",
+      skills: [
+        "AWS",
+        "Docker & Kubernetes",
+        "Terraform",
+        "CI/CD (Jenkins)",
+        "Linux (Ubuntu) & Vim",
+        "Git & GitHub",
+      ],
+    },
+    {
+      title: "AI, GenAI & ML",
+      skills: [
+        "OpenAI APIs & RAG",
+        "Agentic AI & MCP",
+        "Ollama (Local LLMs)",
+        "PyTorch & Hugging Face",
         "Streamlit",
       ],
     },
     {
-      title: "Cloud, Tools & APIs",
+      title: "Certifications & Architecture",
       skills: [
-        "AWS",
-        "Docker",
-        "Git & GitHub",
-        "Linux (Ubuntu)",
-        "Stripe",
-        "Google Maps",
-      ],
-    },
-    {
-      title: "Certifications",
-      skills: [
+        "AWS Solutions Architect (SAA-C03) Studies",
         "AWS Cloud Practitioner",
         "AWS Generative AI",
-        "AWS Solutions Architect (In Progress)",
+        "Scalable Cloud Architecture",
       ],
     },
   ];
@@ -62,13 +82,7 @@ const About = () => {
             <p className="about_description">
               Hello! I'm <strong>Abhyaung Havale</strong> 👋
               <br />
-              <br />A Software Engineer and recent{" "}
-              <strong>Master of Science in Computer Science</strong> graduate
-              from <strong>Pace University</strong>. Based in the Jersey City /
-              NYC metropolitan area, I specialize in building intelligent,
-              scalable applications—from fine-tuning machine learning models for
-              natural language processing to architecting secure, full-stack web
-              platforms.
+              <br />A <strong>Full Stack Developer</strong> currently engineering scalable portfolio and trade processing microservices at <strong>Northern Trust</strong>. Holding a <strong>Master of Science in Computer Science</strong> from Pace University, I specialize in building secure, high-performance applications using modern cloud-native architectures.
               <br />
               <br />
               💡 <strong>Core Expertise:</strong>
@@ -76,26 +90,25 @@ const About = () => {
 
             <ul className="expertise_list">
               <li>
-                🧠 <strong>AI & Machine Learning:</strong>
-                <br></br> NLP, PyTorch, Hugging Face
+                ☕ <strong>Backend & Architecture:</strong>
+                <br></br> Java 21, Spring Boot, Node.js, Event-Driven Design (Kafka)
               </li>
               <li>
-                💻 <strong>Full-Stack Architecture:</strong>
-                <br></br> React.js, Node.js, MERN Stack
+                💻 <strong>Frontend Development:</strong>
+                <br></br> React.js, TypeScript, Next.js, Tailwind CSS
               </li>
               <li>
-                ☁️ <strong>Cloud & MLOps:</strong>
-                <br></br> Docker, API Integration, Streamlit
+                ☁️ <strong>Cloud & DevOps:</strong>
+                <br></br> AWS Infrastructure, Kubernetes (EKS), Docker, Linux
               </li>
               <li>
-                🛠️ <strong>Software Engineering:</strong>
-                <br></br> Scalable System Design & App Development
+                🧠 <strong>AI Integration & ML:</strong>
+                <br></br> Local LLM Orchestration, Agentic AI, PyTorch, OpenAI APIs
               </li>
             </ul>
 
             <p className="about_description" style={{ marginTop: "1rem" }}>
-              I am actively looking to join a driven engineering team where I
-              can build impactful, data-driven solutions. 🚀
+              I thrive in cross-functional teams, driving end-to-end development while leveraging GenAI capabilities and robust cloud architectures to enhance system intelligence and data-driven features. 🚀
             </p>
           </div>
 
