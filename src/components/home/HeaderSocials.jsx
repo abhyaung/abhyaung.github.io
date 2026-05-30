@@ -3,10 +3,21 @@ import React from 'react'
 const HeaderSocials = () => {
   return (
     <div className="home_socials">
+
+        <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/6a887880bc9a490c8d44d8a1926b19d0" className="home_social-link" target="_blank">
+          <img 
+                src="https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" 
+                alt="There's supposed be my badge"
+                width={200} height={200}
+                className="p-2" 
+              />
+        </a>
+
+
         <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/SWZGVR3CSBBEQ1WG" className="home_social-link" target="_blank">
           <img 
-                src="https://www.globalittraining.net/img/bc/AWS-Badge_Cloud-Practitioner.png" 
-                alt="That was my aws badge"
+                src="https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" 
+                alt="There's supposed be my badge"
                 width={200} height={200}
                 className="p-2" 
               />
