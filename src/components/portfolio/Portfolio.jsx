@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./portfolio.css";
-import Menu from "./Menu";
+import Menu from "./projectsData";
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -29,14 +29,14 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="work container section" id="work">
+    <section className="portfolio container section" id="portfolio">
       <h2 className="section_title">My Projects</h2>
 
-      <div className="work_filters">
+      <div className="portfolio_filters">
         {categories.map((category, index) => (
           <span
             key={index}
-            className={`work_item ${activeFilter === category ? "active-work" : ""}`}
+            className={`portfolio_item ${activeFilter === category ? "portfolio_item--active" : ""}`}
             onClick={() => filterItem(category)}
           >
             {category}
@@ -44,29 +44,28 @@ const Portfolio = () => {
         ))}
       </div>
 
-      <div className="work_container">
+      <div className="portfolio_container">
         {items.map((elem) => {
           const { id, image, title, category, link, description } = elem;
           return (
-            <div className="work_card" key={id}>
-              <div className="work_thumbnail">
-                <img src={image} alt={title} className="work_img" />
-                <span className="work_category">{category}</span>
+            <div className="portfolio_card" key={id}>
+              <div className="portfolio_thumbnail">
+                <img src={image} alt={title} className="portfolio_img" />
+                <span className="portfolio_category">{category}</span>
               </div>
 
-              <div className="information">
-                <h3 className="work_title">{title}</h3>
-                <p className="work_description">{description}</p>
+              <div className="portfolio_info">
+                <h3 className="portfolio_title">{title}</h3>
+                <p className="portfolio_description">{description}</p>
               </div>
 
-              {/* FIXED TYPO: changed targrt to target */}
               <a
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="work_button"
+                className="portfolio_button"
               >
-                <i className="icon-link work_button-icon"></i>
+                <i className="icon-link portfolio_button-icon"></i>
               </a>
             </div>
           );

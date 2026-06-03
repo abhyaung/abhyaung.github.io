@@ -63,4 +63,8 @@
     margin: 0.5rem 0;
 }
 
+/*========== Dark Mode ==========*/
+[data-theme="dark"] .timeline_date {
+    color: hsl(244, 20%, 60%);
+}
 

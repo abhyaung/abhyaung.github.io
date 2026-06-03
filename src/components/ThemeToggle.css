@@ -1,0 +1,22 @@
+.theme_toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  z-index: 999;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.theme_toggle:hover {
+  transform: scale(1.1);
+  color: var(--first-color);
+}

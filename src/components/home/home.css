@@ -37,10 +37,6 @@
     align-items: center;
 }
 
-.sppuLogo {
-    border:5;
-    border:black; 
-}
 
 .home_social-link {
     color: var(--title-color);
@@ -171,4 +167,17 @@
 .s11 {
     bottom: 10%;
     right: 2%;
+}
+
+/*========== Dark Mode ==========*/
+[data-theme="dark"] .home_img {
+    border-color: hsl(244, 20%, 50%);
+}
+
+[data-theme="dark"] .mouse {
+    border-color: hsl(244, 20%, 50%);
+}
+
+[data-theme="dark"] .wheel {
+    background: var(--title-color);
 }

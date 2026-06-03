@@ -166,3 +166,18 @@
 .about_title {
     font-size: 1.875rem;
 }
+
+/*========== Dark Mode ==========*/
+[data-theme="dark"] .about_img {
+    border-color: hsl(244, 20%, 50%);
+}
+
+[data-theme="dark"] .skill_pill {
+    border-color: hsl(244, 25%, 28%);
+}
+
+[data-theme="dark"] .skill_pill:hover {
+    background-color: hsl(244, 40%, 28%);
+    color: hsl(244, 60%, 80%);
+    border-color: hsl(244, 40%, 40%);
+}
