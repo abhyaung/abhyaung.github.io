@@ -16,7 +16,7 @@ const Menu = [
     image: "https://www.svgrepo.com/show/395618/mic.svg",
     title: "Field-to-Invoice AI Extractor",
     category: "AI & ML",
-    link: "hhttps://github.com/abhyaung/field-to-invoice-mvp.git",
+    link: "https://github.com/abhyaung/field-to-invoice-mvp.git",
     description:
       "Architected a decoupled microservice using FastAPI and local open-weight LLMs (Ollama) to parse unstructured field dictation into deterministic, strictly typed JSON arrays for automated invoicing.",
   },
