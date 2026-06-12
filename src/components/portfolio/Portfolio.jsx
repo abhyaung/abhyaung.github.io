@@ -46,7 +46,7 @@ const Portfolio = () => {
 
       <div className="portfolio_container">
         {items.map((elem) => {
-          const { id, image, title, category, link, description } = elem;
+          const { id, image, title, category, link, demo, description } = elem;
           return (
             <div className="portfolio_card" key={id}>
               <div className="portfolio_thumbnail">
@@ -59,14 +59,26 @@ const Portfolio = () => {
                 <p className="portfolio_description">{description}</p>
               </div>
 
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="portfolio_button"
-              >
-                <i className="icon-link portfolio_button-icon"></i>
-              </a>
+              <div className="portfolio_buttons">
+                {demo && (
+                  <a
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="portfolio_button portfolio_button--live"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio_button portfolio_button--code"
+                >
+                  Code
+                </a>
+              </div>
             </div>
           );
         })}

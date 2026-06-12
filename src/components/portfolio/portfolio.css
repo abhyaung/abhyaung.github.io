@@ -109,23 +109,28 @@
     color: var(--text-color, #666);
 }
 
-/* ---------- Link Button ---------- */
-.portfolio_button {
+/* ---------- Link Buttons ---------- */
+.portfolio_buttons {
     position: absolute;
+    left: 1.5rem;
     right: 1.5rem;
     bottom: 1.5rem;
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    background-color: var(--first-color, #ffd15c);
-    color: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 0.6rem;
+    z-index: 3;
+}
+
+.portfolio_button {
+    flex: 1;
+    padding: 0.55rem 0.9rem;
+    border-radius: 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
     transition:
         transform 0.2s ease,
-        box-shadow 0.2s ease;
-    z-index: 3;
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
 }
 
 .portfolio_button:hover {
@@ -133,6 +138,18 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio_button-icon {
-    font-size: 1.2rem;
+.portfolio_button--live {
+    background-color: var(--first-color, #ffd15c);
+    color: #000;
+}
+
+.portfolio_button--code {
+    background-color: transparent;
+    color: var(--title-color, #333);
+    border: 1.5px solid var(--first-color, #ffd15c);
+}
+
+.portfolio_button--code:hover {
+    background-color: var(--first-color, #ffd15c);
+    color: #000;
 }

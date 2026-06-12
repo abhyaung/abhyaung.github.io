@@ -7,10 +7,32 @@ import Work6 from "../../assets/banking-api.svg"; // Add a screenshot for this!
 import Work7 from "../../assets/todo-list.png"; // Add a screenshot for this!
 import Work8 from "../../assets/Logo.jpg"; // Swastha Sanchar
 import Work9 from "../../assets/calculator.svg"; // Add a screenshot for this!
+import Work10 from "../../assets/ai-nlp.svg"; // AI Quote Generator
+import Work11 from "../../assets/price-1.svg"; // Mortgage Qualification API
 
 
 
 const Menu = [
+  {
+    id: 11,
+    image: Work10,
+    title: "AI Quote Generator",
+    category: "AI & ML",
+    link: "https://github.com/abhyaung/AI_Quote_generator",
+    demo: "https://ai-quote-generator-sigma.vercel.app/",
+    description:
+      "Built an AI-powered quoting tool for trades businesses that turns a free-text job description into a professional cost estimate in seconds. Deployed on Vercel with an LLM API backing the generation.",
+  },
+  {
+    id: 12,
+    image: Work11,
+    title: "Mortgage Eligibility Analyzer",
+    category: "AI & ML",
+    link: "https://github.com/abhyaung/Mortgage_request_application_analyzer",
+    demo: "https://mortgage-request-application-analyz.vercel.app",
+    description:
+      "Built an AI-powered mortgage eligibility checker with Next.js and Google Gemini. Users enter a financial profile and receive an instant maximum-eligibility assessment plus a risk rating for any requested loan amount.",
+  },
   {
     id: 10,
     image: "https://www.svgrepo.com/show/395618/mic.svg",

@@ -58,6 +58,18 @@
     font-size: var(--small-font-size);
 }
 
+ul.timeline_desc {
+    margin: 0.5rem 0 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+ul.timeline_desc li {
+    list-style: disc;
+}
+
 .timeline_title {
     font-size: var(--h3-font-size);
     margin: 0.5rem 0;

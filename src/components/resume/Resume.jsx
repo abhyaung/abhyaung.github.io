@@ -10,18 +10,15 @@ const Resume = () => {
 
       <div className="resume_container grid">
         <div className="timeline grid">
-          {Data.map((val, id) => {
-            if(val.category === "education") {
-              return(
-                <Card 
-                  key={id} 
-                  icon={val.icon} 
-                  title={val.title} 
-                  year={val.year} 
-                  desc={val.desc} />
-              )
-            }
-          })}
+          {Data.filter((val) => val.category === "education").map((val) => (
+            <Card
+              key={val.id}
+              icon={val.icon}
+              title={val.title}
+              year={val.year}
+              desc={val.desc}
+            />
+          ))}
         </div>
 
         {/* <div className="timeline grid">
