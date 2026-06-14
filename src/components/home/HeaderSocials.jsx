@@ -42,15 +42,6 @@ const HeaderSocials = () => {
               />
         </a>
 
-        <a href="https://github.com/abhyaung/Swastha-Sanchar" className="home_social-link" target="_blank" rel="noopener noreferrer">
-          <img 
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg62Q1v2g8yJmiHZESKBKVoN4ojNFY15uOKLRzBDLfKz1-dD5T5ZkV7eRQ6GhThfsa0dxXnGb6rfsEf2oJgUiqtFOv9ud6NFQLgiXQhzEcfBb33Xu0nwXthW2L0uU_cahADwkPvarQJKH4/s0/image9.png" 
-                alt="Google developer" 
-                width={200} height={200} 
-                className="p-2"
-              />              
-        </a>
-
         <a href={`${process.env.PUBLIC_URL}/Abhyaung-MastersDegree.pdf`} className="home_social-link" target="_blank" rel="noopener noreferrer">
           <img 
                 src="https://i.pinimg.com/736x/68/e9/00/68e9004082fbd80d89c41bda980469d3.jpg" 
