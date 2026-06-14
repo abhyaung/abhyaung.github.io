@@ -33,15 +33,6 @@ const HeaderSocials = () => {
               />
         </a>
 
-        <a href="https://leetcode.com/u/abhyaung/" className="home_social-link" target="_blank" rel="noopener noreferrer">
-          <img 
-                src="https://cdn3d.iconscout.com/3d/free/thumb/free-leetcode-11492972-9325307.png" 
-                alt="Leetcode" 
-                width={200} height={200} 
-                className="p-2"
-              />
-        </a>
-
         <a href={`${process.env.PUBLIC_URL}/Abhyaung-MastersDegree.pdf`} className="home_social-link" target="_blank" rel="noopener noreferrer">
           <img 
                 src="https://i.pinimg.com/736x/68/e9/00/68e9004082fbd80d89c41bda980469d3.jpg" 
