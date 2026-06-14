@@ -21,7 +21,8 @@ const About = () => {
       skills: [
         "Spring Boot",
         "Node.js & Express",
-        "React.js & Next.js",
+        "React.js",
+        "Next.js",
         "GraphQL & gRPC",
         "Hibernate (JPA)",
         "Tailwind CSS & MUI",
@@ -47,6 +48,7 @@ const About = () => {
         "CI/CD (Jenkins)",
         "Linux (Ubuntu) & Vim",
         "Git & GitHub",
+        "Vercel",
       ],
     },
     {
