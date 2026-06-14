@@ -75,6 +75,7 @@ const Menu = [
     title: "MoveEasy",
     category: "Full-Stack",
     link: "https://github.com/abhyaung/MoveEasy",
+    demo: "https://abhyaung.github.io/MoveEasy/",
     description:
       "Developed a flexible, pay-as-you-go moving and delivery platform. Features a dynamic pricing engine based on distance and weight, empowering small businesses with scalable delivery infrastructure.",
   },
@@ -111,6 +112,7 @@ const Menu = [
     title: "React Task Manager",
     category: "Front-End",
     link: "https://github.com/abhyaung/To-Do-List",
+    demo: "https://abhyaung.github.io/To-Do-List/",
     description:
       "Built a responsive, feature-rich task management UI using React and Tailwind CSS. Implemented advanced state management and local storage persistence for a seamless user experience.",
   },
