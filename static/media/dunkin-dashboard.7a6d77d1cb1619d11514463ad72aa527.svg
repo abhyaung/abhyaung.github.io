@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Dunkin store dashboard">
+  <rect width="400" height="300" fill="#FFF7F1"/>
+  <!-- bars (item performance) -->
+  <g>
+    <rect x="40"  y="180" width="34" height="80"  rx="5" fill="#DA1884"/>
+    <rect x="86"  y="140" width="34" height="120" rx="5" fill="#FF6E0C"/>
+    <rect x="132" y="200" width="34" height="60"  rx="5" fill="#DA1884"/>
+    <rect x="178" y="120" width="34" height="140" rx="5" fill="#FF6E0C"/>
+  </g>
+  <!-- trend line -->
+  <polyline points="40,150 100,110 160,130 220,70 280,90 340,50"
+            fill="none" stroke="#6F4E37" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#6F4E37">
+    <circle cx="40" cy="150" r="6"/><circle cx="100" cy="110" r="6"/>
+    <circle cx="160" cy="130" r="6"/><circle cx="220" cy="70" r="6"/>
+    <circle cx="280" cy="90" r="6"/><circle cx="340" cy="50" r="6"/>
+  </g>
+  <!-- donut -->
+  <g transform="translate(310,200)">
+    <circle r="52" fill="#7A4B2B"/>
+    <circle r="52" fill="none" stroke="#FF6E0C" stroke-width="10"/>
+    <circle r="20" fill="#FFF7F1"/>
+    <path d="M-52 0 a52 52 0 0 1 104 0" fill="none" stroke="#DA1884" stroke-width="14" stroke-linecap="round" transform="rotate(-30)"/>
+    <g fill="#7AB648"><circle cx="-30" cy="-18" r="4"/><circle cx="10" cy="-32" r="4"/><circle cx="34" cy="6" r="4"/><circle cx="-8" cy="30" r="4"/></g>
+  </g>
+</svg>

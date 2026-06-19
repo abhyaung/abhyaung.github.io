@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.975f36b1.css",
-    "main.js": "/static/js/main.03220e4f.js",
+    "main.js": "/static/js/main.5a8cb9e4.js",
     "static/media/me-image-2.jpg": "/static/media/me-image-2.7bbd9e23c913f3e56242.jpg",
     "static/media/me-image.jpg": "/static/media/me-image.9de5314864e25a21ce5d.jpg",
     "static/media/todo-list.png": "/static/media/todo-list.1709724550a48aa95e46.png",
@@ -16,6 +16,7 @@
     "static/media/carpool-logo.svg": "/static/media/carpool-logo.b0306e39c748f60b0d771cd15d049a5e.svg",
     "static/media/threat-detection.svg": "/static/media/threat-detection.e2ce0d1014fc89f593d1aeb19cf8cb63.svg",
     "static/media/dots-bg.svg": "/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "static/media/dunkin-dashboard.svg": "/static/media/dunkin-dashboard.7a6d77d1cb1619d11514463ad72aa527.svg",
     "static/media/cloud-solutions.svg": "/static/media/cloud-solutions.8d626e79d72df7770a7df4d14b4878a0.svg",
     "static/media/mobile-programming.svg": "/static/media/mobile-programming.3393a961247f6224d774d0da37fb7382.svg",
     "static/media/ai-nlp.svg": "/static/media/ai-nlp.990c326c9d6262eb0211e134dda1cdf7.svg",
@@ -23,10 +24,10 @@
     "index.html": "/index.html",
     "static/media/version-control.svg": "/static/media/version-control.80d8654b86c85a1e603a08437f7f49e4.svg",
     "main.975f36b1.css.map": "/static/css/main.975f36b1.css.map",
-    "main.03220e4f.js.map": "/static/js/main.03220e4f.js.map"
+    "main.5a8cb9e4.js.map": "/static/js/main.5a8cb9e4.js.map"
   },
   "entrypoints": [
     "static/css/main.975f36b1.css",
-    "static/js/main.03220e4f.js"
+    "static/js/main.5a8cb9e4.js"
   ]
 }
