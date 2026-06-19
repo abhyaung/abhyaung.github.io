@@ -9,10 +9,21 @@ import Work8 from "../../assets/Logo.jpg"; // Swastha Sanchar
 import Work9 from "../../assets/calculator.svg"; // Add a screenshot for this!
 import Work10 from "../../assets/ai-nlp.svg"; // AI Quote Generator
 import Work11 from "../../assets/price-1.svg"; // Mortgage Qualification API
+import Work12 from "../../assets/dunkin-dashboard.svg"; // Dunkin Store Dashboard
 
 
 
 const Menu = [
+  {
+    id: 13,
+    image: Work12,
+    title: "Dunkin' Store Dashboard",
+    category: "Front-End",
+    link: "https://github.com/abhyaung/dunkin-dashboard",
+    demo: "https://abhyaung.github.io/dunkin-dashboard/",
+    description:
+      "Built a per-store analytics dashboard for a 3-branch Dunkin' franchise with React, Vite and Recharts. Each store view breaks down cost of goods, payroll, rent and utilities against turnover and profit, and flags trending vs underperforming products to guide ordering. Includes CSV import to load real inventory, earnings and payroll data.",
+  },
   {
     id: 11,
     image: Work10,
