@@ -84,7 +84,7 @@ const About = () => {
             <p className="about_description">
               Hello! I'm <strong>Abhyaung Havale</strong> 👋
               <br />
-              <br />A <strong>Full Stack Developer</strong> currently engineering scalable portfolio and trade processing microservices at <strong>Northern Trust</strong>. Holding a <strong>Master of Science in Computer Science</strong> from Pace University, I specialize in building secure, high-performance applications using modern cloud-native architectures.
+              <br />A <strong>Software Developer</strong> at <strong>Built By The Trades</strong>, building scalable, enterprise-ready SaaS platforms for the skilled trades industry. Holding a <strong>Master of Science in Computer Science</strong> from Pace University, I specialize in building secure, high-performance applications using modern cloud-native architectures.
               <br />
               <br />
               💡 <strong>Core Expertise:</strong>
