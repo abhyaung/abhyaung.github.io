@@ -1,33 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.975f36b1.css",
-    "main.js": "/static/js/main.14d5187d.js",
+    "main.css": "/static/css/main.d0e883f5.css",
+    "main.js": "/static/js/main.8dd7c12f.js",
     "static/media/me-image-2.jpg": "/static/media/me-image-2.7bbd9e23c913f3e56242.jpg",
-    "static/media/me-image.jpg": "/static/media/me-image.9de5314864e25a21ce5d.jpg",
     "static/media/todo-list.png": "/static/media/todo-list.1709724550a48aa95e46.png",
+    "static/media/hero-cutout.webp": "/static/media/hero-cutout.b9765f86c9cfbfc9f631.webp",
     "static/media/rag-engine.png": "/static/media/rag-engine.ec04c9c144c5d57d5bcb.png",
     "static/media/Logo.jpg": "/static/media/Logo.d4b67cdc6b23a4016fc4.jpg",
     "static/media/Moveasy.png": "/static/media/Moveasy.880e5eb7c4248ec19dfe.png",
-    "static/media/data-analysis.svg": "/static/media/data-analysis.1089b31d953294912b2633cc6c813c28.svg",
     "static/media/price-1.svg": "/static/media/price-1.b5f9838862632ad0cabb2d51d8a1f47a.svg",
-    "static/media/service-2.svg": "/static/media/service-2.5c151f1353d4629154fbf0e537115128.svg",
     "static/media/sales-analyzer.svg": "/static/media/sales-analyzer.b65fc44c8e28a61193c6ab0cc9598f88.svg",
     "static/media/calculator.svg": "/static/media/calculator.72acd918a17cacc321c55467bb12d197.svg",
     "static/media/carpool-logo.svg": "/static/media/carpool-logo.b0306e39c748f60b0d771cd15d049a5e.svg",
     "static/media/threat-detection.svg": "/static/media/threat-detection.e2ce0d1014fc89f593d1aeb19cf8cb63.svg",
-    "static/media/dots-bg.svg": "/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
     "static/media/dunkin-dashboard.svg": "/static/media/dunkin-dashboard.7a6d77d1cb1619d11514463ad72aa527.svg",
-    "static/media/cloud-solutions.svg": "/static/media/cloud-solutions.8d626e79d72df7770a7df4d14b4878a0.svg",
-    "static/media/mobile-programming.svg": "/static/media/mobile-programming.3393a961247f6224d774d0da37fb7382.svg",
     "static/media/ai-nlp.svg": "/static/media/ai-nlp.990c326c9d6262eb0211e134dda1cdf7.svg",
-    "static/media/banking-api.svg": "/static/media/banking-api.315e34515c5a864315ddb6231f6bc05f.svg",
     "index.html": "/index.html",
-    "static/media/version-control.svg": "/static/media/version-control.80d8654b86c85a1e603a08437f7f49e4.svg",
-    "main.975f36b1.css.map": "/static/css/main.975f36b1.css.map",
-    "main.14d5187d.js.map": "/static/js/main.14d5187d.js.map"
+    "static/media/banking-api.svg": "/static/media/banking-api.315e34515c5a864315ddb6231f6bc05f.svg",
+    "main.d0e883f5.css.map": "/static/css/main.d0e883f5.css.map",
+    "main.8dd7c12f.js.map": "/static/js/main.8dd7c12f.js.map"
   },
   "entrypoints": [
-    "static/css/main.975f36b1.css",
-    "static/js/main.14d5187d.js"
+    "static/css/main.d0e883f5.css",
+    "static/js/main.8dd7c12f.js"
   ]
 }
