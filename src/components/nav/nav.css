@@ -1,0 +1,41 @@
+.nav {
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  color: var(--hero-fg);
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  border-bottom: 1px solid transparent;
+}
+.nav--solid {
+  color: var(--text);
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom-color: var(--border);
+}
+
+.nav_inner {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+  height: 4.25rem; gap: 1rem;
+}
+
+.nav_brand { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 0.35rem; }
+.nav_star { display: inline-block; font-size: 1rem; color: var(--accent); }
+
+.nav_links { display: flex; gap: 0.35rem; font-size: 0.95rem; }
+.nav_links a { transition: color 0.15s; padding: 0.25rem 0.1rem; color: inherit; }
+.nav_links a:hover { color: var(--accent-ink); }
+.nav_comma { margin-left: 0.05rem; }
+
+.nav_actions { display: flex; justify-content: flex-end; align-items: center; gap: 1rem; }
+.nav_cta { font-size: 0.95rem; text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 1px; transition: color 0.15s; }
+.nav_cta:hover { color: var(--accent-ink); }
+
+.nav_theme {
+  display: inline-grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: 50%;
+  border: 1px solid currentColor; opacity: 0.75; transition: opacity 0.15s;
+}
+.nav_theme:hover { opacity: 1; }
+
+@media (max-width: 760px) {
+  .nav_inner { grid-template-columns: 1fr auto; }
+  .nav_links { display: none; }
+}

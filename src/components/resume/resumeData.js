@@ -1,59 +1,55 @@
-const Data = [
+// Dates and titles follow the July 2026 resume (public/Abhyaung_Havale_Resume.pdf).
+const experience = [
   {
-    id: 1,
-    category: "education",
-    icon: "icon-graduation",
-    year: "2018-2019",
-    title: "HSC 12th Grade (Science)",
-    desc: "Secured 83% in the 12th-grade examinations, focusing on science and mathematics streams.",
-  },
-  {
-    id: 2,
-    category: "education",
-    icon: "icon-graduation",
-    year: "2019 - 2023",
-    title: "Bachelor of Science in Computer Science",
+    id: 'bbtt',
+    year: 'Jun 2026 – now',
+    title: 'Software Developer',
+    org: 'Built By The Trades · Remote, USA',
     desc: [
-      "Achieved a CGPA of 7.9, equivalent to approximately 70.3% based on SPPU's conversion formula (CGPA × 8.9).",
-      "Completed coursework in data structures, algorithms, software engineering, and database management systems.",
+      'Building SaaS products for the skilled-trades industry on a small product team, with feature ownership from the first month.',
+      'Full-stack work across React and Next.js front-ends, Node and Java services, Supabase and AWS.',
     ],
   },
   {
-    id: 3,
-    category: "education",
-    icon: "icon-graduation",
-    year: "2023 - 2025",
-    title: "Master of Science in Computer Science",
+    id: 'nt',
+    year: 'Jul 2025 – Jun 2026',
+    title: 'Software Engineer',
+    org: 'Insight Nova Solutions, on a Northern Trust engagement · USA',
     desc: [
-      "Completed advanced coursework focused on Artificial Intelligence, Cloud Computing architectures, and Distributed Systems.",
-      "Architected production-ready capstone projects, including local LLM inference engines, asynchronous data pipelines, and highly available microservices."
+      'Engineered portfolio and trade-processing microservices with Java 21, Spring Boot and Spring Cloud.',
+      'Delivered React and TypeScript dashboards, Kafka and SQS event workflows, and OAuth2 and JWT security on AWS EKS.',
     ],
   },
-
-  // {
-  //   id: 4,
-  //   category: "experience",
-  //   icon: "icon-briefcase",
-  //   year: "2022 - 2023",
-  //   title: "Head of NSS Department",
-  //   desc: "Led community engagement initiatives and organized events as the NSS Head during my undergraduate studies at Modern College, Pune.",
-  // },
-  // {
-  //   id: 5,
-  //   category: "experience",
-  //   icon: "icon-briefcase",
-  //   year: "2022 - 2023",
-  //   title: "Lab Instructor (Computer Science Dept.)",
-  //   desc: "Assisted students with practical sessions and debugging, and helped faculty in conducting computer lab activities.",
-  // },
-  // {
-  //   id: 6,
-  //   category: "experience",
-  //   icon: "icon-briefcase",
-  //   year: "December 2024 - April 2025",
-  //   title: "Software Developer Intern — SECA Intelligence",
-  //   desc: "Working on architecture planning, matchmaking algorithms, and front-end enhancements for a real-world software product.",
-  // },
+  {
+    id: 'ps',
+    year: 'Feb 2021 – Aug 2023',
+    title: 'Java Developer',
+    org: 'Persistent Systems · Pune, India',
+    desc: [
+      'Joined as a Software Engineer Trainee while finishing the B.Sc., then converted to a full-time Java Developer.',
+      'Built backend services for a digital lending and payments system with Java 11, Spring Boot and Hibernate; integrated credit-score and banking APIs; used Kafka and RabbitMQ for real-time loan and payment processing.',
+    ],
+  },
 ];
 
-export default Data;
+const education = [
+  {
+    id: 'pace',
+    year: 'Sep 2023 – May 2025',
+    title: 'M.S. Computer Science',
+    org: 'Pace University · New York, USA',
+    desc: [
+      'Coursework in artificial intelligence, cloud computing architectures and distributed systems.',
+      'Capstone work on local LLM inference engines, asynchronous data pipelines and highly available microservices.',
+    ],
+  },
+  {
+    id: 'sppu',
+    year: 'Jul 2019 – Dec 2022',
+    title: 'B.Sc. Computer Science',
+    org: 'Savitribai Phule Pune University · Pune, India',
+    desc: ['Data structures, algorithms, software engineering and database systems. CGPA 7.9.'],
+  },
+];
+
+export { experience, education };

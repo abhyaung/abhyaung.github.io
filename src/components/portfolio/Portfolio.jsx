@@ -1,87 +1,82 @@
-import React, { useState } from "react";
-import "./portfolio.css";
-import Menu from "./projectsData";
+import React, { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import './portfolio.css';
+import Menu from './projectsData';
+import Reveal from '../shared/Reveal';
+import { Arrow } from '../shared/Icons';
+
+const categories = ['All', 'AI & ML', 'Full-Stack', 'Backend', 'Front-End', 'Android'];
+
+const tone = { 'AI & ML': 'ai', 'Full-Stack': 'full', Backend: 'back', 'Front-End': 'front', Android: 'android' };
 
 const Portfolio = () => {
-  const [items, setItems] = useState(Menu);
-  const [activeFilter, setActiveFilter] = useState("All");
-
-  const filterItem = (categoryItem) => {
-    if (categoryItem === "All") {
-      setItems(Menu);
-      setActiveFilter("All");
-      return;
-    }
-    const updatedItems = Menu.filter((curElem) => {
-      return curElem.category === categoryItem;
-    });
-    setItems(updatedItems);
-    setActiveFilter(categoryItem);
-  };
-
-  const categories = [
-    "All",
-    "AI & ML",
-    "Full-Stack",
-    "Backend",
-    "Front-End",
-    "Android",
-  ];
+  const [active, setActive] = useState('All');
+  const items = active === 'All' ? Menu : Menu.filter((p) => p.category === active);
 
   return (
-    <section className="portfolio container section" id="portfolio">
-      <h2 className="section_title">My Projects</h2>
+    <section className="work section" id="work">
+      <div className="container">
+        <Reveal className="section_head">
+          <h2 className="section_title">Selected work</h2>
+          <p className="section_lead">
+            Thirteen projects across AI, full-stack and backend work. Where there is a live demo it is linked;
+            every project links to its source on GitHub.
+          </p>
+        </Reveal>
 
-      <div className="portfolio_filters">
-        {categories.map((category, index) => (
-          <span
-            key={index}
-            className={`portfolio_item ${activeFilter === category ? "portfolio_item--active" : ""}`}
-            onClick={() => filterItem(category)}
-          >
-            {category}
-          </span>
-        ))}
-      </div>
+        <Reveal delay={0.05} className="work_filters" role="tablist" aria-label="Filter projects">
+          {categories.map((c) => (
+            <button
+              key={c}
+              type="button"
+              role="tab"
+              aria-selected={active === c}
+              className={`work_filter ${active === c ? 'work_filter--on' : ''}`}
+              onClick={() => setActive(c)}
+            >
+              {c}
+            </button>
+          ))}
+        </Reveal>
 
-      <div className="portfolio_container">
-        {items.map((elem) => {
-          const { id, image, title, category, link, demo, description } = elem;
-          return (
-            <div className="portfolio_card" key={id}>
-              <div className="portfolio_thumbnail">
-                <img src={image} alt={title} className="portfolio_img" />
-                <span className="portfolio_category">{category}</span>
-              </div>
-
-              <div className="portfolio_info">
-                <h3 className="portfolio_title">{title}</h3>
-                <p className="portfolio_description">{description}</p>
-              </div>
-
-              <div className="portfolio_buttons">
-                {demo && (
-                  <a
-                    href={demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="portfolio_button portfolio_button--live"
-                  >
-                    Live Demo
-                  </a>
-                )}
+        <motion.div className="work_grid" layout>
+          <AnimatePresence mode="popLayout">
+            {items.map((p) => (
+              <motion.article
+                key={p.id}
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+                className="work_card"
+              >
                 <a
-                  href={link}
+                  href={p.demo || p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="portfolio_button portfolio_button--code"
+                  className={`work_thumb work_thumb--${tone[p.category] || 'ai'}`}
+                  aria-label={`${p.title}: open ${p.demo ? 'live demo' : 'source code'}`}
                 >
-                  Code
+                  <img src={p.image} alt="" loading="lazy" />
                 </a>
-              </div>
-            </div>
-          );
-        })}
+                <div className="work_body">
+                  <div className="work_titles">
+                    <h3 className="work_title">{p.title}</h3>
+                    <span className="work_cat">{p.category}</span>
+                  </div>
+                  <p className="work_desc">{p.description}</p>
+                  <p className="work_links">
+                    {p.demo && (
+                      <a href={p.demo} target="_blank" rel="noopener noreferrer">Live demo <Arrow /></a>
+                    )}
+                    <a href={p.link} target="_blank" rel="noopener noreferrer">Source <Arrow /></a>
+                  </p>
+                </div>
+              </motion.article>
+            ))}
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );

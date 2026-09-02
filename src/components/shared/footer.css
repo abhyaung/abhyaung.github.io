@@ -1,0 +1,5 @@
+.footer { border-top: 1px solid var(--border); background: var(--bg-2); }
+.footer_inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-top: 1.5rem; padding-bottom: 1.5rem; font-size: 0.82rem; color: var(--muted); }
+.footer_top { transition: color 0.2s; }
+.footer_top:hover { color: var(--text); }
+@media (max-width: 620px) { .footer_inner { flex-direction: column; text-align: center; } }

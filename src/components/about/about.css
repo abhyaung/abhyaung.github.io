@@ -1,183 +1,30 @@
-/* --- Main Section Layout --- */
-.about.section {
-    padding: 1rem 0;
-}
+.about_grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; }
 
-.section_title {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 1rem;
+.about_photo {
+  margin-top: 2rem; border-radius: var(--radius); overflow: hidden;
+  aspect-ratio: 4 / 5; max-width: 24rem;
 }
+.about_photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.about_caption { font-size: 0.85rem; color: var(--muted); margin-top: 0.7rem; }
 
-.section_subtitle {
-    display: block;
-    font-size: 1rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-}
+.about_right { padding-top: 0.5rem; }
+.about_text { font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.1rem; color: var(--muted); }
+.about_text--lead { font-size: 1.25rem; color: var(--text); }
+.about_text strong { color: var(--text); font-weight: 600; }
 
-/* Mobile First Container */
-.about_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    justify-content: center;
-}
+.about_facts { display: grid; gap: 0.6rem; margin: 2rem 0 2rem; }
+.about_fact { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1rem; }
+.about_fact dt { color: var(--muted); }
+.about_fact dd { color: var(--text); }
 
-/* Desktop Container Layout */
-@media (min-width: 64em) {
-    .about_container {
-        grid-template-columns: 3fr 9fr;
-        column-gap: 1.875rem;
-    }
-}
+.about_creds { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; }
+.about_cred { display: inline-flex; align-items: center; gap: 0.6rem; font-size: 0.92rem; color: var(--text); padding: 0.35rem 0; text-decoration: underline; text-underline-offset: 0.2em; text-decoration-color: var(--border-2); transition: text-decoration-color 0.15s; }
+.about_cred:hover { text-decoration-color: var(--accent); }
+.about_cred img { width: 28px; height: 28px; object-fit: contain; }
+.about_cred-mark { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--surface-2); border: 1px solid var(--border); font-size: 0.6rem; font-weight: 700; }
 
-/* --- Profile Image Styling --- */
-.about_img {
-    width: 15.625rem;
-    height: 15.625rem;
-    border-radius: 25%;
-    border: 2px solid #000;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0 auto 1.5rem;
-}
-
-/* --- Data Box Styling (The white card holding the text) --- */
-.about_data {
-    padding: 1.875rem;
-    background-color: var(--container-color);
-    box-shadow: var(--shadow);
-    border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: column;
-    gap: 1.875rem;
-    position: relative;
-}
-
-/* Splits the text and skills into two columns on desktop */
-@media (min-width: 48em) {
-    .about_data {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.875rem;
-        row-gap: 1.875rem;
-        align-items: flex-start;
-    }
-}
-
-/* --- Typography & Text --- */
-.about_description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-color);
-    max-width: 100%;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-.expertise_list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0.5rem;
-    text-align: left;
-}
-
-.expertise_list li {
-    justify-content: flex-start;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-    color: var(--text-color);
-}
-
-/* --- Modern Skill Pills --- */
-.about_skills-modern {
-    width: 100%;
-    align-self: flex-start;
-}
-
-.skills_heading {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--title-color, #333);
-}
-
-.skills_grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.skill_group_title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--title-color, #555);
-    margin-bottom: 0.75rem;
-}
-
-.skill_pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-}
-
-.skill_pill {
-    background-color: var(--container-color, #f3f4f6);
-    color: var(--text-color, #374151);
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border: 1px solid #e5e7eb;
-    transition: all 0.2s ease;
-}
-
-.skill_pill:hover {
-    background-color: #e0e7ff;
-    color: #4f46e5;
-    border-color: #c7d2fe;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-/* --- About Boxes (Achievements/Stats kept from original) --- */
-.about_boxes {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1.875rem;
-    margin-top: 4.35rem;
-}
-
-.about_box {
-    display: flex;
-    column-gap: 1.5rem;
-}
-
-.about_icon {
-    font-size: var(--h1-font-size);
-    color: #dedeea;
-}
-
-.about_title {
-    font-size: 1.875rem;
-}
-
-/*========== Dark Mode ==========*/
-[data-theme="dark"] .about_img {
-    border-color: hsl(244, 20%, 50%);
-}
-
-[data-theme="dark"] .skill_pill {
-    border-color: hsl(244, 25%, 28%);
-}
-
-[data-theme="dark"] .skill_pill:hover {
-    background-color: hsl(244, 40%, 28%);
-    color: hsl(244, 60%, 80%);
-    border-color: hsl(244, 40%, 40%);
+@media (max-width: 900px) {
+  .about_grid { grid-template-columns: 1fr; }
+  .about_photo { max-width: 22rem; aspect-ratio: 4 / 3; }
+  .about_fact { grid-template-columns: 6.5rem minmax(0, 1fr); }
 }

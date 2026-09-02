@@ -1,75 +1,72 @@
-// src/components/Contact.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
+import Reveal from '../shared/Reveal';
+import { Arrow, Copy, Check, Github, Linkedin, Mail } from '../shared/Icons';
 
-const Contact = () => (
-  <section className="contact container section" id="contact">
-    <h2 className="section_title">Get In Touch</h2>
-    <div className="contact_container grid">
-      <div className="contact_info">
-        <h3 className="contact_title">Let's talk about everything!</h3>
-        <p className="contact_details">
-          Don't like forms? Email me at{' '}
-          <a href="mailto:abhyaung@gmail.com">
-            abhyaung@gmail.com
-          </a>
-        </p>
+const EMAIL = 'abhyaung@gmail.com';
+
+const Contact = () => {
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {
+      window.location.href = `mailto:${EMAIL}`;
+    }
+  };
+
+  return (
+    <section className="contact section" id="contact">
+      <div className="container contact_grid">
+        <div>
+          <Reveal>
+            <h2 className="section_title contact_title">Get in touch</h2>
+            <p className="section_lead">
+              Open to full-time roles and contract work. Email is the quickest way to reach me; I usually reply
+              within a day.
+            </p>
+          </Reveal>
+          <Reveal delay={0.1} className="contact_links">
+            <button type="button" className="contact_link" onClick={copy}>
+              <Mail /> {EMAIL} {copied ? <Check /> : <Copy />}
+            </button>
+            <a href="https://github.com/abhyaung" target="_blank" rel="noopener noreferrer" className="contact_link">
+              <Github /> github.com/abhyaung <Arrow />
+            </a>
+            <a href="https://linkedin.com/in/abhyaunghavale" target="_blank" rel="noopener noreferrer" className="contact_link">
+              <Linkedin /> linkedin.com/in/abhyaunghavale <Arrow />
+            </a>
+          </Reveal>
+        </div>
+
+        <Reveal delay={0.1}>
+          <form action="https://formspree.io/f/mblowqqb" method="POST" className="contact_form">
+            <div className="contact_row">
+              <label className="field">
+                <span>Name</span>
+                <input type="text" name="name" required autoComplete="name" />
+              </label>
+              <label className="field">
+                <span>Email</span>
+                <input type="email" name="email" required autoComplete="email" />
+              </label>
+            </div>
+            <label className="field">
+              <span>Subject</span>
+              <input type="text" name="subject" required />
+            </label>
+            <label className="field">
+              <span>Message</span>
+              <textarea name="message" rows="5" required />
+            </label>
+            <button type="submit" className="btn contact_submit">Send message</button>
+          </form>
+        </Reveal>
       </div>
-
-      {/* point action for Formspree endpoint */}
-      <form
-        action="https://formspree.io/f/mblowqqb"
-        method="POST"
-        className="contact_form"
-      >
-        <div className="contact_form-group">
-          <div className="contact_form-div">
-            <input
-              type="text"
-              name="name"
-              className="contact_form-input"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-
-          <div className="contact_form-div">
-            <input
-              type="email"
-              name="email"
-              className="contact_form-input"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-        </div>
-
-        <div className="contact_form-div">
-          <input
-            type="text"
-            name="subject"
-            className="contact_form-input"
-            placeholder="Enter your subject"
-            required
-          />
-        </div>
-
-        <div className="contact_form-div contact_form-area">
-          <textarea
-            name="message"
-            className="contact_form-input"
-            placeholder="Enter your message"
-            rows="6"
-            required
-          />
-        </div>
-
-        <button type="submit" className="btn">
-          Send Message
-        </button>
-      </form>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Contact;

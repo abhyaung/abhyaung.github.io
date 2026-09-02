@@ -1,0 +1,8 @@
+.skills { background: var(--bg-2); }
+
+.skills_rows { display: grid; gap: 1.4rem; }
+.skills_row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 1.5rem; }
+.skills_row dt { color: var(--text); font-weight: 600; }
+.skills_row dd { color: var(--muted); line-height: 1.6; max-width: 60ch; }
+
+@media (max-width: 700px) { .skills_row { grid-template-columns: 1fr; gap: 0.2rem; } }

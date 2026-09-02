@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import Home from './components/home/Home';
+import React, { useEffect, useState } from 'react';
+import Nav from './components/nav/Nav';
+import Hero from './components/hero/Hero';
 import About from './components/about/About';
-import Services from './components/services/Services';
+import Portfolio from './components/portfolio/Portfolio';
+import Skills from './components/skills/Skills';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
-import Portfolio from './components/portfolio/Portfolio';
-import ThemeToggle from './components/ThemeToggle';
+import Footer from './components/shared/Footer';
 
 const App = () => {
-  const [theme, setTheme] = useState(() =>
-    localStorage.getItem('portfolio-theme') || 'light'
-  );
+  const [theme, setTheme] = useState(() => localStorage.getItem('portfolio-theme') || 'light');
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -19,20 +17,18 @@ const App = () => {
   }, [theme]);
 
   return (
-    <div>
-      <ThemeToggle
-        theme={theme}
-        toggleTheme={() => setTheme(t => t === 'light' ? 'dark' : 'light')}
-      />
-      <main className='main'>
-        <Home />
+    <>
+      <Nav theme={theme} toggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))} />
+      <main>
+        <Hero />
         <About />
         <Portfolio />
-        <Services />
+        <Skills />
         <Resume />
         <Contact />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 };
 
