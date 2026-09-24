@@ -7,10 +7,10 @@ import { Copy, Check, Download, Arrow } from '../shared/Icons';
 const EMAIL = 'abhyaung@gmail.com';
 
 const phrases = [
-  'I build software for home-services businesses at Built By The Trades.',
-  'I own Goose, our AI call-intelligence product for field technicians.',
-  'Before that: a year of trade-processing microservices for Northern Trust.',
-  'On the side: local RAG engines, a BERT threat classifier, a Dunkin’ dashboard.',
+  'I build production AI applications on distributed backend systems.',
+  'I own Goose, an AI call-intelligence product for field technicians.',
+  'My stack spans Java, Kafka, Kubernetes, LLM pipelines and real-time services.',
+  'I also build local RAG systems, agent workflows and applied NLP projects.',
 ];
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="hero_inner container">
         <div className="hero_copy">
           <h1 className="hero_name">Hey there, I’m Abhyaung Havale.</h1>
-          <p className="hero_meta">Software Developer &middot; M.S. Computer Science, Pace University</p>
+          <p className="hero_meta">Software Engineer &middot; Distributed Systems &middot; Applied AI</p>
 
           <p className="hero_line">
             <Typewriter phrases={phrases} />

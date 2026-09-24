@@ -6,8 +6,9 @@ const experience = [
     title: 'Software Developer',
     org: 'Built By The Trades · Remote, USA',
     desc: [
-      'Building SaaS products for the skilled-trades industry on a small product team, with feature ownership from the first month.',
-      'Full-stack work across React and Next.js front-ends, Node and Java services, Supabase and AWS.',
+      'Own engineering delivery for Goose, a production AI call-intelligence platform combining LLM scoring, speech pipelines, real-time services and native mobile capture.',
+      'Ship multi-tenant SaaS across Next.js, TypeScript, PostgreSQL, Redis, BullMQ and Socket.IO, including RBAC, OAuth integrations and production release gates.',
+      'Built the iOS background-recording integration in Swift and delivered voice capture into asynchronous transcription and analysis workflows.',
     ],
   },
   {
@@ -17,7 +18,7 @@ const experience = [
     org: 'Insight Nova Solutions, on a Northern Trust engagement · USA',
     desc: [
       'Engineered portfolio and trade-processing microservices with Java 21, Spring Boot and Spring Cloud.',
-      'Delivered React and TypeScript dashboards, Kafka and SQS event workflows, and OAuth2 and JWT security on AWS EKS.',
+      'Delivered Kafka and SQS event workflows, concurrent batch processing, Redis performance improvements, and OAuth2/JWT security on AWS EKS.',
     ],
   },
   {

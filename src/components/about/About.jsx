@@ -6,7 +6,7 @@ import { Github } from '../shared/Icons';
 
 const facts = [
   ['Currently', 'Software Developer, Built By The Trades (since June 2026)'],
-  ['Owns', 'Goose, an AI call-intelligence product for field technicians'],
+  ['Owns', 'Goose, a production AI call-intelligence platform'],
   ['Education', 'M.S. Computer Science, Pace University, 2025'],
   ['Based in', 'Jersey City, New Jersey. Fully remote.'],
 ];
@@ -44,17 +44,17 @@ const About = () => (
             home-services businesses: HVAC, plumbing, roofing, garage doors, electrical.
           </p>
           <p className="about_text">
-            I own Goose, our AI sales-coaching and call-intelligence product for field technicians, and work across the
-            rest of the suite: ServiceDash (booking, dispatch and live technician tracking), TradeGames (technician
-            leaderboards and leagues) and the internal tooling around them. In my first month I shipped the ServiceDash
-            QA wave, twenty-four pull requests, and Goose passed external QA certification in August.
+            I own Goose, our production AI sales-coaching and call-intelligence product. I ship the systems around its
+            LLM scoring, speech-to-text, conversational voice experience, asynchronous analysis workers and mobile call
+            capture, while also working across ServiceDash and TradeGames. The work spans product architecture, secure
+            multi-tenant data, native mobile integrations, release gates and production operations.
           </p>
           <p className="about_text">
             Before this I spent a year on trade-processing microservices for Northern Trust through Insight Nova
             Solutions, and two and a half years at Persistent Systems in Pune on a digital lending and payments
             platform. I finished an M.S. in Computer Science at Pace University in 2025; the capstone work was on
-            local LLM inference and retrieval-augmented generation. I like systems that stay boring in production:
-            clear APIs, sensible data models, good observability.
+            local LLM inference and retrieval-augmented generation. I am most useful where AI applications meet
+            distributed systems: clear APIs, durable queues, careful data models, observable failures and safe rollouts.
           </p>
         </Reveal>
 

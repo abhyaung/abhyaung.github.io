@@ -15,6 +15,15 @@ import Work12 from "../../assets/dunkin-dashboard.svg"; // Dunkin Store Dashboar
 
 const Menu = [
   {
+    id: 14,
+    image: Work5,
+    title: "Goose AI Call Intelligence",
+    category: "AI & ML",
+    demo: "https://www.heygoose.app/",
+    description:
+      "Own engineering delivery for a production AI sales-coaching platform that turns field-call audio into transcripts, LLM-scored coaching and operational follow-ups. Work spans real-time services, Redis and BullMQ workers, Deepgram and ElevenLabs voice pipelines, PostgreSQL, multi-tenant authorization, and native Android/iOS capture.",
+  },
+  {
     id: 13,
     image: Work12,
     title: "Dunkin' Store Dashboard",

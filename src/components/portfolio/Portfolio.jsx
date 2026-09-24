@@ -19,8 +19,7 @@ const Portfolio = () => {
         <Reveal className="section_head">
           <h2 className="section_title">Selected work</h2>
           <p className="section_lead">
-            Thirteen projects across AI, full-stack and backend work. Where there is a live demo it is linked;
-            every project links to its source on GitHub.
+            Production work and independent projects across AI applications, distributed systems, full-stack and backend engineering.
           </p>
         </Reveal>
 
@@ -56,7 +55,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`work_thumb work_thumb--${tone[p.category] || 'ai'}`}
-                  aria-label={`${p.title}: open ${p.demo ? 'live demo' : 'source code'}`}
+                  aria-label={`${p.title}: open ${p.demo ? 'live site' : 'source code'}`}
                 >
                   <img src={p.image} alt="" loading="lazy" />
                 </a>
@@ -70,7 +69,9 @@ const Portfolio = () => {
                     {p.demo && (
                       <a href={p.demo} target="_blank" rel="noopener noreferrer">Live demo <Arrow /></a>
                     )}
-                    <a href={p.link} target="_blank" rel="noopener noreferrer">Source <Arrow /></a>
+                    {p.link && (
+                      <a href={p.link} target="_blank" rel="noopener noreferrer">Source <Arrow /></a>
+                    )}
                   </p>
                 </div>
               </motion.article>
